@@ -20,7 +20,7 @@ package_to_update = sys.argv[2]
 from_version = sys.argv[4]
 to_version = sys.argv[6]
 
-with open('.ci_support/pypi_vs_conda_names.json', 'r') as f:
+with open('.static_ci_support/pypi_vs_conda_names.json', 'r') as f:
     name_conversion_dict = json.load(f)
 
 package_name = convert_package_name(package_to_update, name_conversion_dict)
